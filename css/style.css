@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/*font-family: 'Work Sans', sans-serif;*/
+
+html,body{
+    height: 100%;
+    background: rgb(176,255,232);
+    background: linear-gradient(180deg, 
+    rgba(176,255,232,1) 0%, 
+    rgba(255,224,169,1) 21%, 
+    rgba(255,193,193,1) 45%, 
+    rgba(231,253,228,1) 74%, 
+    rgba(252,217,254,1) 94%,
+    rgba(176,255,232,1) 100%);
+}
+
+.center{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header{
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(255, 255, 255);
+    font-family: 'Dancing Script', cursive;
+    font-size: 30pt;
+}
+
+/*section lista*/
+
+div.todo{
+    margin: 0 auto;
+    max-width: 600px;
+    max-height: 600px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    overflow-y: auto;
+}
+
+.todo-single{
+    margin-top: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 20px;
+}
+
+
+
+
+.todo-single .fechar{
+    color: red;
+    font-family: 'Work Sans', sans-serif;
+    cursor: pointer;
+    display: inline;
+    position: relative;
+    left: 45%;
+}
+
+.todo-single p{
+    font-weight: lighter;
+    margin: 10px 0 10px 0;
+}
+
+.checked{
+    border: 2px solid rgb(75, 255, 90);
+    background: rgb(192, 253, 196);
+}
+
+/*section add-tarefa*/
+
+section.add-tarefa{
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+section.add-tarefa input{
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Work Sans', sans-serif;
+    background: rgb(202, 202, 202);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section.add-tarefa input:hover{
+    background: rgb(173, 173, 173);
+}
+
+
+/*section modal*/
+
+section.modal{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 50px);
+    background: rgb(128, 128, 128,0.7);
+}
+
+section.modal .form{
+    text-align: center;
+    margin: 200px auto 0 auto;
+    background: white;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+section.modal .form h1{
+    margin-bottom: 10px;
+}
+
+section.modal .form input[type=text]{
+    width: 100%;
+    padding: 5px 0px 5px 10px;
+    outline: 0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+section.modal .form p{
+    margin-bottom: 10px;
+}
+
+section.modal .form input[type=time]{
+    width: 100%;
+    padding-left: 10px;
+    outline: 0;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+section.modal .form textarea{
+    resize: none;
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+section.modal .form input[type=submit]{
+    border: 0;
+    padding: 10px;
+    margin-top: 10px;
+    background: rgb(207, 207, 207);
+    border-radius: 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section.modal .form input[type=submit]:hover{
+    background: rgb(124, 124, 124); 
+}
+
+/*footer*/
+footer{
+    margin-top: 20px;
+    color: rgb(141, 141, 141);
+    text-align: center;
+}

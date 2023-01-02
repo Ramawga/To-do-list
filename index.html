@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <div class="center">
+            <h1>To Do List</h1>
+        </div><!--center-->
+    </header>
+    <section class="lista">
+        <div class="center">
+            <div class="todo">
+            </div><!--todo-->
+        </div>
+    </section>
+    <section class="add-tarefa">
+        <div class="center">
+            <input type="button" value="Adicionar tarefa!" id="addtarefa">
+        </div><!--center-->
+    </section><!--add-tarefa-->
+
+    <section class="modal">
+        <div class="center">
+            <div class="form">
+                <h1>Adicionar Tarefa</h1>
+                <input type="text" id="titulo" placeholder="Titulo da tarefa">
+                <p>Começar às (opcional)</p>
+                <input type="time" id="time">
+                <p>Terminar às (opcional)</p>
+                <input type="time" id="time2">
+                <textarea name="mensagem" id="mensagem" placeholder="Detalhes sobre a tarefa..."></textarea>
+                <input type="submit" value="Adicionar" onclick="fecharModal()">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Lucas Ramayana</p>
+    </footer>
+
+    
+    <script src="js/func.js"></script>
+</body>
+</html>
